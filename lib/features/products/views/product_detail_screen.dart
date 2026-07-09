@@ -37,7 +37,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                   Text(widget.product.name, style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
                   Text('Sold by ${widget.product.vendorName}', style: TextStyle(fontSize: 14, color: Colors.grey[600], fontStyle: FontStyle.italic)),
                   const SizedBox(height: 10),
-                  Text('\₹${widget.product.price.toStringAsFixed(2)} / ${widget.product.unit}', style: const TextStyle(fontSize: 20, color: Colors.green, fontWeight: FontWeight.bold)),
+                  Text('₹${widget.product.price.toStringAsFixed(2)} / ${widget.product.unit}', style: const TextStyle(fontSize: 20, color: Colors.green, fontWeight: FontWeight.bold)),
                   const SizedBox(height: 15),
                   Text(widget.product.description, style: const TextStyle(fontSize: 16, height: 1.4)),
                   const SizedBox(height: 30),

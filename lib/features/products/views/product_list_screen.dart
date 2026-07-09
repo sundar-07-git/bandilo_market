@@ -111,7 +111,7 @@ class ProductListScreen extends ConsumerWidget {
                                     Text(product.name, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16), maxLines: 1, overflow: TextOverflow.ellipsis),
                                     Text('Sold by: ${product.vendorName}', style: TextStyle(color: Colors.grey[600], fontSize: 11)),
                                     const SizedBox(height: 4),
-                                    Text('\₹${product.price.toStringAsFixed(2)} / ${product.unit}', style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.green)),
+                                    Text('₹${product.price.toStringAsFixed(2)} / ${product.unit}', style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.green)),
                                   ],
                                 ),
                               )
