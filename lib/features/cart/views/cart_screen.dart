@@ -24,7 +24,7 @@ class CartScreen extends ConsumerWidget {
                       return ListTile(
                         leading: Image.network(item.product.imageUrl, width: 50, height: 50, fit: BoxFit.cover),
                         title: Text(item.product.name),
-                        subtitle: Text('\$${(item.product.price * item.quantity).toStringAsFixed(2)}'),
+                        subtitle: Text('\₹${(item.product.price * item.quantity).toStringAsFixed(2)}'),
                         trailing: Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
@@ -47,7 +47,7 @@ class CartScreen extends ConsumerWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             const Text('Total:', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-                            Text('\$${total.toStringAsFixed(2)}', style: const TextStyle(fontSize: 20, color: Colors.green, fontWeight: FontWeight.bold)),
+                            Text('\₹${total.toStringAsFixed(2)}', style: const TextStyle(fontSize: 20, color: Colors.green, fontWeight: FontWeight.bold)),
                           ],
                         ),
                         const SizedBox(height: 15),
